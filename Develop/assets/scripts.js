@@ -1,7 +1,7 @@
 // Create a time that represent the current hour
 // create a function for the save button
 $(document).ready(function () {
-  console.log("hi");
+ /*  console.log("hi"); */
   
   //create save btn and localstorage the text from box
   var saveBtn9 = document.getElementById("savebtn9");
@@ -77,6 +77,7 @@ $(document).ready(function () {
     setTimeout(function () {
       document.getElementById("notify").style.display = "none";
     }, 4000);
+  
   });
 
 //load any saved data from localStorage
@@ -92,8 +93,6 @@ $(document).ready(function () {
   //changing the color of the column when hour change
 });
 
-
-
 //time
 setInterval(() => {
   document.getElementById("currentDay").textContent = moment().format(
@@ -101,12 +100,38 @@ setInterval(() => {
   );
 }, 1000);
 
-/* 
-var time = document.getElementsByName('s_time')[0].value || new Date().getTime();
+// column change when hour change past
 
-var d = new Date(time);
-var currentHour = d.getHours();
-if (currentHour < 9 || currentHour >= 17) {
-    alert('something');
-} */
+const d = new Date();
+var currentTime= d.getHours()
+
+// condition time for highlight
+
+if (currentTime >= 9 && currentTime <=10) {
+document.getElementById('text9h').style.backgroundColor = 'lightgray'
+}
+else if(currentTime >= 9 && currentTime <=10) {
+document.getElementById('text10h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 11 && currentTime <=12) {
+document.getElementById('text11h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 12 && currentTime <=13) {
+document.getElementById('text12h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 13 && currentTime <=14) {
+document.getElementById('text13h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 14 && currentTime <=15) {
+document.getElementById('text14h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 15 && currentTime <=16) {
+document.getElementById('text15h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 16 && currentTime <=17) {
+document.getElementById('text16h').style.backgroundColor = 'lightgray'
+}
+else if (currentTime >= 17 && currentTime <18) {
+document.getElementById('text17h').style.backgroundColor = 'lightgray'
+}
 
