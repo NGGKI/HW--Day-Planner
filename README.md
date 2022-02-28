@@ -13,6 +13,6 @@ You can review my App with vanila Javascript at link: https://github.com/NGGKI/H
 
 4.Local storage
 
-<img width="800" alt="local storage" src="https://user-images.githubusercontent.com/99234927/155922802-60f50108-79ef-4f1d-a436-7901a99d4360.PNG">
+<img width="500" alt="local storage" src="https://user-images.githubusercontent.com/99234927/155922802-60f50108-79ef-4f1d-a436-7901a99d4360.PNG">
 
 Thank you for taking the time to review my code. Due to limited time, i am still working on it until the product is finished.
