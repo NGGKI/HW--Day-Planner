@@ -100,35 +100,33 @@ setInterval(() => {
   );
 }, 1000);
 
-// column change when hour change past
 
 const d = new Date();
 var currentTime= d.getHours()
 
 // condition time for highlight
-
-if (currentTime >= 9 && currentTime <=10) {
+if (currentTime >= 9 && currentTime < 10) {
 document.getElementById('text9h').style.backgroundColor = 'lightgray'
 }
-else if(currentTime >= 9 && currentTime <=10) {
+else if(currentTime >= 10 && currentTime <11) {
 document.getElementById('text10h').style.backgroundColor = 'lightgray'
 }
-else if (currentTime >= 11 && currentTime <=12) {
+else if (currentTime >= 11 && currentTime <12) {
 document.getElementById('text11h').style.backgroundColor = 'lightgray'
 }
-else if (currentTime >= 12 && currentTime <=13) {
+else if (currentTime >= 12 && currentTime <13) {
 document.getElementById('text12h').style.backgroundColor = 'lightgray'
 }
-else if (currentTime >= 13 && currentTime <=14) {
+else if (currentTime >= 13 && currentTime <14) {
 document.getElementById('text13h').style.backgroundColor = 'lightgray'
 }
-else if (currentTime >= 14 && currentTime <=15) {
+else if (currentTime >= 14 && currentTime <15) {
 document.getElementById('text14h').style.backgroundColor = 'lightgray'
 }
-else if (currentTime >= 15 && currentTime <=16) {
+else if (currentTime >= 15 && currentTime <16) {
 document.getElementById('text15h').style.backgroundColor = 'lightgray'
 }
-else if (currentTime >= 16 && currentTime <=17) {
+else if (currentTime >= 16 && currentTime <17) {
 document.getElementById('text16h').style.backgroundColor = 'lightgray'
 }
 else if (currentTime >= 17 && currentTime <18) {
