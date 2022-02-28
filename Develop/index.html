@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <section class="text-center notification" id="notify" style="display: none">
+      Appointment Added to <code>localStorage</code> ✔️
+    </section>
+    <div class="container">
+      <div id="hour-9" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          9AM
+        </div>
+        <textarea
+          id="text9h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn9" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-10" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          10AM
+        </div>
+        <textarea
+          id="text10h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn10" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-11" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          11AM
+        </div>
+        <textarea
+          id="text11h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn11" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-12" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          12AM
+        </div>
+        <textarea
+          id="text12h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn12" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-13" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          1PM
+        </div>
+        <textarea
+          id="text13h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn13" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-14" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          2PM
+        </div>
+        <textarea
+          id="text14h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn14" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-15" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          3PM
+        </div>
+        <textarea
+          id="text15h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn15" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-16" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          4PM
+        </div>
+        <textarea
+          id="text16h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn16" class="col-md-1">Save</button>
+      </div>
+      <div id="hour-17" class="row time-block">
+        <div
+          class="col-md-1 hour"
+          style="background-color: lightgoldenrodyellow"
+        >
+          5PM
+        </div>
+        <textarea
+          id="text17h"
+          class="col-md-10 description"
+          style="background-color: pink"
+        >
+        </textarea>
+        <button id="savebtn17" class="col-md-1">Save</button>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
